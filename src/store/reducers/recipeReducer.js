@@ -7,6 +7,14 @@ const initState = {
 }
 
 const recipeReducer = (state = initState, action) => {
+    switch (action.type) {
+        case 'CREATE_RECIPE':
+            console.log('created project', action.recipe)
+            break;
+    
+        default:
+            break;
+    }
     return state
 }
 
