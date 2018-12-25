@@ -20,7 +20,7 @@ class CreateRecipe extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         // console.log(this.state)
-        this.props.createRecipe(this.state)
+        this.props.createRecipe(this.state) //kirim ke mapDispatch dibawah
     }
   render() {
     return (
@@ -60,7 +60,7 @@ class CreateRecipe extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        createRecipe: (recipe) => dispatch(createRecipe(recipe))
+        createRecipe: (recipe) => dispatch(createRecipe(recipe)) // kirim state ke action creator (recipeActions)
     }
 }
 

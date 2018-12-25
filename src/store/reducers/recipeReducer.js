@@ -6,16 +6,19 @@ const initState = {
     ]
 }
 
+// menerima hasil recipe Actions untuk dikembalikan ke state
 const recipeReducer = (state = initState, action) => {
     switch (action.type) {
         case 'CREATE_RECIPE':
-            console.log('created project', action.recipe)
-            break;
+            console.log('created project', action.recipe);
+            return state;
+        case 'CREATE_RECIPE_ERROR':
+            console.log('created project error', action.err);
+            return state;
     
         default:
-            break;
+            return state;
     }
-    return state
 }
 
 
