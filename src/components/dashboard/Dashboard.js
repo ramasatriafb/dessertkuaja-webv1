@@ -7,7 +7,7 @@ import { compose } from 'redux'
 
 class Dashboard extends Component {
   render() {
-    // console.log(this.props);
+     // console.log(this.props);
     const { recipes } = this.props;
     return (
       <div className="dashboard container">
@@ -25,9 +25,10 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  // console.log(state)
   return {
-    recipes: state.recipe.recipes
+    // recipes: state.recipe.recipes -> data Get dari dummy
+    recipes: state.firestore.ordered.recipes
   }
 }
 

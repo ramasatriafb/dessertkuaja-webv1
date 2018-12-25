@@ -49,7 +49,7 @@ class CreateRecipe extends Component {
                     <input type="text" id="kategori" onChange={this.handleChange} />
                 </div>
                 <div className="input-field">
-                    <button className="btn green lighten-1 z-depth-0"> Login</button>
+                    <button className="btn green lighten-1 z-depth-0"> Simpan</button>
                 </div>
             </form>
         </div>
